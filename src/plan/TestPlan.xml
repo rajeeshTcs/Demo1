@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Krypton_Smample_TestPlan" verbose="1" parallel="false">
+	<parameter name="KryptonMetaData_Description" value="Summary about TEP" />
+	<parameter name="KryptonMetaData_TEPID" value="JIRA ID" />
+	<parameter name="capsinsuiteoverridable" value="true" />
+
+	<test name="TC1_HelloWorld">
+		<classes>
+			<class name="scripts.TC1_HelloWorld" />
+		</classes>
+	</test>
+	<test name="TC2_GoToKryptonWiki">
+		<parameter name="browsername" value="firefox" />
+		<classes>
+			<class name="scripts.TC2_GoToKryptonWiki" />
+		</classes>
+	</test>
+	<test name="TC3_GoToKryptonManager">
+		<classes>
+			<class name="scripts.TC3_GoToKryptonManager" />
+		</classes>
+	</test>
+</suite>
